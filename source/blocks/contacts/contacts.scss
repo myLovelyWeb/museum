@@ -21,6 +21,10 @@
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  & > iframe {
+    width: 100%;
+  }
 }
 
 .contacts__methods {
