@@ -1,0 +1,96 @@
+.service {
+  padding-top: 100px;
+  padding-bottom: 95px;
+  background-color: #f5f0e8;
+}
+
+.service__title {
+  margin: 0;
+  font-family: "Slabo 27px", serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #26211e;
+}
+
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 90px;
+  padding: 0;
+  list-style: none;
+}
+
+.service__link {
+  display: block;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 35px;
+  width: 170px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #26211e;
+
+  &:not([href]) {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #d1d1d1;
+  }
+}
+
+.service__link--excursion::before {
+  top: 0;
+  width: 64px;
+  height: 64px;
+  background-image: url("../img/excursion.png");
+}
+
+.service__link--research::before {
+  top: 0;
+  width: 37px;
+  height: 53px;
+  background-image: url("../img/research.png");
+}
+
+.service__link--library::before {
+  top: 11px;
+  width: 47px;
+  height: 46px;
+  background-image: url("../img/library.png");
+}
+
+.service__link--souvenirs::before {
+  top: 11px;
+  width: 51px;
+  height: 43px;
+  background-image: url("../img/souvenirs.png");
+}
+
+.service__link--rent::before {
+  top: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/rent.png");
+}

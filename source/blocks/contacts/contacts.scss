@@ -1,0 +1,122 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 120px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #26211e;
+  background-color: #f5f0e8;
+}
+
+.contacts__map {
+  height: 851px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.contacts__methods {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 65px;
+  padding-bottom: 45px;
+  background-color: rgba(178, 52, 39, 0.9);
+
+  & h4 {
+    margin: 0;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+.contacts__methods-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__method-item {
+  position: relative;
+  padding-top: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &--address {
+    &::before {
+      top: 1px;
+      width: 26px;
+      height: 23px;
+      background-image: url("../img/icon-map.png");
+    }
+  }
+
+  &--tel {
+    &::before {
+      top: 0;
+      width: 14px;
+      height: 26px;
+      background-image: url("../img/icon-tel.png");
+    }
+  }
+
+  &--fax {
+    &::before {
+      top: 0;
+      width: 26px;
+      height: 26px;
+      background-image: url("../img/icon-fax.png");
+    }
+  }
+
+  &--email {
+    &::before {
+      top: 4px;
+      width: 26px;
+      height: 16px;
+      background-image: url("../img/icon-email.png");
+    }
+  }
+
+  & > p {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #f5f3f0;
+
+    & > span {
+      display: block;
+      font-size: 12px;
+      line-height: 22px;
+      font-style: italic;
+      text-align: center;
+      color: #c0bcb6;
+    }
+  }
+}

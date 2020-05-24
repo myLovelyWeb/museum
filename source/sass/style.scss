@@ -1,0 +1,13 @@
+@import "normalize";
+@import "base/base.scss";
+@import "base/fonts.scss";
+@import "base/inputs.scss";
+@import "grid/smart-grid.scss";
+@import "mixins/wrapper";
+@import "../blocks/page/page.scss";
+@import "../blocks/page-header/page-header.scss";
+@import "../blocks/schedule/schedule.scss";
+@import "../blocks/service/service.scss";
+@import "../blocks/news/news.scss";
+@import "../blocks/contacts/contacts.scss";
+@import "../blocks/page-footer/page-footer.scss";
